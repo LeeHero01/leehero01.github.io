@@ -5,7 +5,9 @@
 
 body {
     margin: 0;
+    background: linear-gradient(to right, rgb(222, 234, 255), rgb(179, 205, 255));
     font-family: 'DNFBitBitv2', sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -19,6 +21,12 @@ a {
     align-items: center;
     background-color: #263343;
     padding: 8px 12px;
+
+    position: fixed;
+    top: 0;
+    bottom: unset;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar__logo img {
@@ -61,7 +69,7 @@ a {
     color: white;
     display: flex;
     padding-left: 0;
-
+    padding-right: 20px;
 }
 
 .navbar__icons li {
@@ -71,19 +79,102 @@ a {
 .navbar__toggleBtn {
     display: none;
     position: absolute;
-    right: 32px;
+    right: 70px;
     font-size: 24px;
     color: #d49366;
+    margin-top: 12px;
 }
 
-.container {
+#main,
+#about,
+#skills,
+#portfolio,
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* GPT */
+#about {
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.table_group {
+}
+
+.text {
+    margin-left: 50px;
+    max-width: 100%; /* 텍스트 부분의 최대 너비 설정 */
+    z-index: 1;
+    border-radius: 10px; /* 둥근 네모를 만듭니다. */
+    background-color: #ffffff; /* 배경색을 흰색으로 지정합니다. */
+    padding: 20px; /* 내부 여백을 추가합니다. */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가합니다. */
+    margin-bottom: 20px;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.profile-image img {
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 300px;
+    border-radius: 24px;
+    z-index: 1;
+}
+
+.sh_tb {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    font-weight: normal;
+}
+
+.sh_tb th, .sh_tb td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.sh_tb th {
+    background-color: #f2f2f2;
+}
+
+.sh_tb tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+/* GPT */
+
+.inner-container {
     position: relative;
     max-width: 100%; 
     height: auto;
     margin: 0 auto;
 }
 
-.container img {
+.inner-container img {
+    min-width: 600px;
     max-width: 100%; 
     max-height: 850px;
     display: block; 
@@ -102,9 +193,15 @@ a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
+.navbar.sticky {
+    background-color: #263343; /* 스크롤시 배경색 변경 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 스크롤시 그림자 효과 추가 */
+}
 
 
-@media screen and (max-width: 810px) {
+
+
+@media screen and (max-width: 850px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -136,5 +233,9 @@ a {
     .navbar__menu.active,
     .navbar__icons.active {
         display: flex;
+    }
+
+    .about-container {
+        
     }
 }
