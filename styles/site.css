@@ -96,9 +96,20 @@ a {
     height: 100vh;
 }
 
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .skills_img {
     width: 100px;
     height: auto;
+    margin: 10px;
+}
+
+.skills_list {
+    text-align: center;
 }
 
 /* GPT */
@@ -126,6 +137,8 @@ a {
     padding: 20px; /* 내부 여백을 추가합니다. */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가합니다. */
     margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 .text h2 {
@@ -164,7 +177,40 @@ a {
     background-color: #f9f9f9;
 }
 
+/* SwiperJS*/
 
+html,
+.portfolio {
+      position: relative;
+      height: 100%;
+    }
+.portfolio {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 
 /* GPT */
