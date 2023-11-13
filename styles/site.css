@@ -212,6 +212,18 @@ html,
       object-fit: cover;
     }
 
+    .swiper-button-next {
+        padding: 50px;
+    }
+
+    .swiper-button-prev {
+        padding: 50px;
+    }
+
+    .swiper-pagination {
+        padding: 50px;
+    }
+
 
 /* GPT */
 
