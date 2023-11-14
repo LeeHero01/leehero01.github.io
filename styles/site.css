@@ -146,6 +146,16 @@ a {
     font-weight: normal;
 }
 
+.text h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.text h5 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
 .profile-image img {
     display: block;
     margin: auto;
