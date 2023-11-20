@@ -129,14 +129,12 @@ a {
 }
 
 .text {
-    margin-left: 50px;
     max-width: 100%; /* 텍스트 부분의 최대 너비 설정 */
     z-index: 1;
     border-radius: 10px; /* 둥근 네모를 만듭니다. */
     background-color: #ffffff; /* 배경색을 흰색으로 지정합니다. */
     padding: 20px; /* 내부 여백을 추가합니다. */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과를 추가합니다. */
-    margin-bottom: 20px;
     font-size: 16px;
     font-weight: normal;
 }
@@ -258,8 +256,14 @@ html,
 
 /* GPT */
 
+.show_box {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
 .portfolio_exp {
     font-family: 'DNFBitBitv2', sans-serif;
+    margin-left: 50px;
     margin-right: 50px;
     max-width: 70%;
 }
@@ -292,10 +296,10 @@ html,
 }
 
 .project-description {
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 10px;
     font-size: 16px;
     line-height: 1.4;
-    color: #555; /* Adjust the color as needed */
+    color: #555;
 }
 
 .inner-container {
@@ -326,11 +330,22 @@ html,
 }
 
 .navbar.sticky {
-    background-color: #263343; /* 스크롤시 배경색 변경 */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 스크롤시 그림자 효과 추가 */
+    background-color: #263343;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Port EXP 페이지 */
 
+#Introduction,
+#Planning,
+#Realize,
+#Presentation,
+#Result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 
 @media screen and (max-width: 850px) {
