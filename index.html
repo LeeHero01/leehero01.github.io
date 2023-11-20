@@ -16,8 +16,7 @@
     <script type="text/javascript">   
         $(document).ready( function() {
         
-        $("#headers").load("nav_page/navbar.html");  
-        $("#footers").load("nav_page/footer.html");  
+        $("#headers").load("nav_page/navbar.html"); 
         
         });
     </script>
@@ -136,20 +135,35 @@
         <section id="portfolio" class="portfolio">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                        
-
-                  </div>
-                  <div class="swiper-slide">
-
-
-                  </div>
+                    <div class="swiper-slide">
+                        <div class="text portfolio_exp">
+                            <h2>USD Project</h2>
+                            <div class="image-container">
+                                <img src="/img/USD_Game.png" alt="USD_Game_Img">
+                                <img src="/img/USD_Page.png" alt="USD_HomePage_Img">
+                            </div>
+                            <p class="project-description">
+                                두원공과대학교 졸업작품 (캡스톤 디자인) <br>
+                                게임, 홈페이지, 서버 개발 <br> <br>
+                                Unity, ASP.NET Core, MS-SQL 사용
+                            </p>
+                            <button class="port_exp_btn" value="USD-Project" onclick="gotoDetailPage(this.value)">자세히 보기</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text portfolio_exp">
+                            <h1>앞으로 추가 될 예정입니다!</h1>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-              </div>
+            </div>
         </section>
+        
+        
+        
 
         <script>
             var swiper = new Swiper(".mySwiper", {
@@ -176,12 +190,13 @@
 
                     <P>구글 플레이 콘솔 등록명 : 3O Studio</P> <BR>
 
-                    <h5>Copyrightⓒ2023. Delveloper.이영웅.All rights reserved. <BR>
+                    <h5>
+                        - Copyrightⓒ2023. Delveloper.이영웅.All rights reserved. <BR>
 
-                        본 사이트는 상업적 목적이 아닌 Delveloper 이영웅 개인포트폴리오 사이트로 제작되었습니다. <BR>
-                        일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.
+                        - 본 사이트는 상업적 목적이 아닌 Delveloper 이영웅 개인포트폴리오 사이트로 제작되었습니다. <BR>
+                        - 일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다. <BR>
                         
-                        본 사이트는 반응형 디자인으로 제작되어있습니다.
+                        - 본 사이트는 반응형 디자인으로 제작되어있습니다.
                     </h5>
                 </div>
             </div>

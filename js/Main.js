@@ -25,3 +25,9 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('sticky');
     }
 });
+
+function gotoDetailPage(pageName) {
+    const pagePath = `/exp/${pageName}.html`;
+
+    window.location.href = pagePath;
+}
